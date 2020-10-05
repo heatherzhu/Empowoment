@@ -5,4 +5,45 @@ h1 {
 	text-align: center;
 	background-color: #211649;
 	color: white;
+	padding: 100px;
+}
+
+#nav ul {
+	background-color: #ADE4E8;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100%;
+	
+}
+
+#nav li {
+	float: left;
+}
+
+#nav li a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#nav a:link {
+	color: black;
+}
+
+#nav a:visited {
+	color: black;
+}
+
+#nav a:hover {
+	color: white;
+	background-color: navy;
+}
+
+#nav a:active {
+	color: black;
 }
