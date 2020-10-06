@@ -47,3 +47,14 @@ h1 {
 #nav a:active {
 	color: black;
 }
+
+.class {
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
