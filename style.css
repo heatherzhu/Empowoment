@@ -27,10 +27,11 @@ h1 {
 #nav li a {
 	display: block;
 	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
 	text-align: center;
 	text-decoration: none;
 	font-weight: bold;
-	margin:0 85px;
 }
 
 #nav a:link {
@@ -48,4 +49,30 @@ h1 {
 
 #nav a:active {
 	color: black;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Compresses the two columns into one column on smaller screens*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.border {
+	border-left: 1px solid black;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
 }
