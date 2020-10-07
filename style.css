@@ -52,11 +52,6 @@
 	background-color: #211649;
 }
 
-#nav a:active { /* Can't get this to work */
-	color: white;
-    background-color: #211649;
-}
-
 .column {
     float: left;
     width: 50%;
