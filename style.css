@@ -1,16 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
 
-h1 {
+.titleBanner {
 	text-align: center;
 	background-color: #211649;
 	color: white;
-	padding: 100px;
-	font-size: 50px;
+	padding: 70px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#nav {
+    margin-bottom: 10px;
 }
 
 #nav ul {
-	background-color: #ADE4E8;
+
 	list-style-type: none;
 	overflow: hidden;
 	margin: 0;
@@ -21,14 +26,14 @@ h1 {
 }
 
 #nav li {
-	float: left;
+	float: right;
 }
 
 #nav li a {
 	display: block;
 	padding: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
 	text-align: center;
 	text-decoration: none;
 	font-weight: bold;
@@ -44,12 +49,12 @@ h1 {
 
 #nav a:hover {
 	color: white;
-	background-color: navy;
+	background-color: #211649;
 }
 
 #nav a:active { /* Can't get this to work */
 	color: white;
-    background-color: navy;
+    background-color: #211649;
 }
 
 .column {
@@ -72,7 +77,7 @@ h1 {
 
 .border {
 	border-left: 1px solid black;
-	height: 500px;
+	height: 400px;
 	position: absolute;
 	left: 50%;
 	margin-left: -1px;
@@ -107,9 +112,11 @@ h1 {
 	padding: 4px;
 }
 
+/* easier resizing */
 * {
     box-sizing: border-box;
 }
+
 .gallery {
     position: relative;
 }
@@ -137,8 +144,48 @@ h1 {
     background-color: #2C2C2C;
 }
 
+.highlightTitle {
+    
+}
 
+.columnEnd {
+    float: left;
+    width: 25%;
+}
 
+.rowEnd {
+    color: white;
+    background-color: #211649;
+}
+
+.rowEnd:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .columnEnd {
+        width: 100%;
+    }
+}
+
+.columnSports {
+    float: left;
+    width: 50%;
+}
+
+.rowSports:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .columnSports {
+        width: 100%;
+    }
+}
 
 
 
