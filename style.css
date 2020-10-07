@@ -47,26 +47,27 @@ h1 {
 	background-color: navy;
 }
 
-#nav a:active {
-	color: black;
+#nav a:active { /* Can't get this to work */
+	color: white;
+    background-color: navy;
 }
 
 .column {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /*Compresses the two columns into one column on smaller screens*/
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+    .column {
+        width: 100%;
+    }
 }
 
 .border {
@@ -79,15 +80,21 @@ h1 {
 
 .center {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+	margin: auto;
+	width: 100%;
+}
+
+.centerVideo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	width: 350px;
 	height: 200px;
 }
@@ -99,3 +106,39 @@ h1 {
 .container {
 	padding: 4px;
 }
+
+* {
+    box-sizing: border-box;
+}
+.gallery {
+    position: relative;
+}
+
+.videos {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 25px;
+    color: black;
+    font-size: 25px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    color: white;
+    background-color: #2C2C2C;
+}
+
+
+
+
+
+
