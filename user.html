@@ -1,67 +1,120 @@
 <!doctype html>
 <html>
+<!--profile pic: https://www.blackpast.org/african-american-history/leslie-lisa-deshaun-1972/
+fan gallery pic: https://www.wizmnews.com/2019/09/12/basketball-legend-lisa-leslie-to-speak-in-la-crosse/
+pics/videos pic: https://www.latimes.com/sports/story/2019-09-04/sparks-lisa-leslie-statue-at-staples-center-->
 	<head>
 		<meta charset="UTF-8">
-		<title>People's Page</title>
+		<title>Sports</title>
 		<link rel="stylesheet" href="style.css">
-		<style> 
-			.main {
-				width: 20%;
-				float: left;
-				padding: 20px;
-				margin-left: 30px;
-			}
-			.bio {
-			  width: 130px;
-			  height: 70px;
-			  border-style: solid;
-			  border-color: #ADE4E8;
-			  padding: 20px;
-			  margin: 10px;
-			}
-			.circles-parent { text-align:center; }
-			.circle         { 
-			  background:#bbb; 
-			  width: 280px;
-			  height: 280px;
-			  line-height: 280px;
-			  display:inline-block; 
-			  margin:0 15px; 
-			  font-size: 20px;
-			  text-align: center;
-			}
-			.second {
-		      width: 70%;
-		      float: right;
-		      padding: 30px;
-		    }
-		</style>
 	</head>
+	<style>
+		.column1 {
+		  float: left;
+		  width: 25%;
+		}
+		.column2 {
+			float: left;
+			width: 40%;
+		}
+		.column {
+		  float: left;
+		  width: 33.33%;
+		}
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
 
-<body>
-<h1>[Username]<img src="https://cdn2.iconfinder.com/data/icons/activity-5/50/1F3C0-basketball-512.png" width="20" height="20"></img></h1>
-	<div id="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="">People</a></li>
-			<li><a href="">Connect</a></li>
-			<li><a href="">Donate</a></li>
-			<li><a href="">Merch</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</div>
-	<div class="main"> 
-	<img src= "https://images.pexels.com/photos/159607/basketball-player-girls-basketball-girl-159607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="200" height= "250"></img>
-		<div class="bio">
-			Info
+		/*Compresses the two columns into one column on smaller screens*/
+		@media screen and (max-width: 600px) {
+		  .column {
+			width: 100%;
+		  }
+		}
+		.bio {
+			align-content: center;
+			border-style: solid;
+			border-color: #ADE4E8;
+			height: 80px;
+			padding: 20px;
+			margin: 15px;
+		}
+		.userName {
+
+		}
+
+	</style>
+	<body>
+		<h1>[Team Name]/[Username]<img src="https://raw.githubusercontent.com/heatherzhu/WISP/main/basketball.png" width="20" height="20"></img></h1>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sports.html">Sports</a></li>
+				<li><a href="">Connect</a></li>
+				<li><a href="">Donate</a></li>
+				<li><a href="">Merch</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
 		</div>
-	</div>
-	<div class="second">
-		<div class="circle-parent">
-			<div class="circle">Pics</div>
-			<div class="circle">Tips</div>
-			<div class="circle">Fan Gallery</div>
+		
+		<div class="row">
+		<!-- Column 1 -->
+		  <div class="column1">
+		  	<div style="margin-top:15px;">
+				<img src="https://www.blackpast.org/wp-content/uploads/prodimages/files/Lisa_Leslie.jpg" style="width: 75%"; class="center"> </img>
+				  <div class="bio">
+				  	<h3 style="text-align: center;">
+				  	Personal Info
+				  	</h3>
+				  </div>
+				</div>
+			</div>
+			<div class="column2"> 
+				<div style="margin-left:15px;">
+				<div style = "width: 600px; height: 50px; border: 2px; border-style: solid; border-color: #ADE4E8; margin: 15px;">
+					<h3 style= "text-align: center;">
+					Lisa Leslie
+					</h3>
+				</div>
+				<div style = "width: 600px; height: 300px; border: 2px; border-style: solid; border-color: #ADE4E8; margin: 15px;">
+					<h3 style= "text-align: center;">
+					Description
+					</h3>
+				</div>
+			</div>
+			</div>
+
+		<!-- Column 2 -->
+		  <div class="column">
+
+			<div class="card">
+				  <br>
+				  <br>
+				<img src="https://ca-times.brightspotcdn.com/dims4/default/4f37456/2147483647/strip/true/crop/400x300+0+0/resize/840x630!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fca%2F9e%2F71bda9eaca18c70eda9fc51fc208%2Fla-082502sparks-h1dej7ke" alt="Baseball" style="width: 45%;" class="center">
+				  <div class="container">
+				  	<h3 style="text-align: center;">
+				  	Baseball
+				  </h3>
+				  </div>
+			  </div>
+			</div>
+		<!-- Column 3 -->
+		  <div class="column">
+			<div class="card">
+				  <br>
+				  <br>
+				<img src="https://i2.wp.com/www.wizmnews.com/wp-content/uploads/2019/09/WNBA-Lisa-Leslie-AP.jpg?w=1280&ssl=1" alt="Football" style="width: 50%;" class="center">
+				  <div class="container">
+				  	<h3 style="text-align: center;">
+				  	Fan Gallery
+				  	</h3>
+				  </div>
+			  </div>
+			</div>
+			
+			
 		</div>
-	</div>
-</body>
+	</body>
 </html>
