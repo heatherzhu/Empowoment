@@ -10,18 +10,35 @@
 		<!-- Navigation Bar -->
 		<div id="nav">
 			<ul>
-                <h1 style="float:left; margin: 0;">WISP</h1>
-				<li><a href="about.html">About</a></li>
-                <li><a href="">Merch</a></li>
-                <li><a href="">Donate</a></li>
-                <li><a href="">Connect</a></li>
-                <li><a href="sports.html">Sports</a></li>
-                <li><a href="index.html">Home</a></li>
+                <img src="logo.png" alt="logo" width="50" height="50" style="float:left">
+                <div class="logoName">
+                    <h1 style="float:left; margin: 0; margin-top: 10px;">WISP</h1>
+                </div>
+                <li style="margin-top: 15px"><a href="login.html">Login</a></li>
+				<li style="margin-top: 15px"><a href="about.html">About</a></li>
+                <li style="margin-top: 15px"><a href="merch.html">Merch</a></li>
+                <li style="margin-top: 15px"><a href="donate.html">Donate</a></li>
+                <li style="margin-top: 15px"><a href="connect.html">Connect</a></li>
+                <li class="dropdown">
+                    <a href="sports.html" class="dropTab" style="margin-top: 15px">Sports</a>
+                    <div class="dropOptions">
+                        <a href="team.html">Basketball</a>
+                        <a href="">Lacrosse</a>
+                        <a href="">Soccer</a>
+                        <a href="">Tennis</a>
+                        <a href="">Swimming</a>
+                        <a href="">Volleyball</a>
+                    </div>
+                </li>
+                <li style="margin-top: 15px"><a href="index.html">Home</a></li>
 			</ul>
 		</div>
         <div class="titleBanner">
-            <h1>Women in Sports</h1>
-            <h2>Empowering women in the sports industry</h2>
+            <div class="textCentered">
+                <h1 style="font-size: 50px">Women in Sports</h1>
+                <p style="font-size: 30px"><strong>Empowering women in the sports industry</strong></p>
+            </div>
+            <img src="blue sky.jpg" alt="Clouds" width="100%" height="300" style="display: block">
         </div>
 		<!-- Two column system -->
 		<div class="row">
@@ -69,7 +86,9 @@
                     <h5>Team:</h5>
                     <h5>Position:</h5>
                     <h5>Fun Fact:</h5>
-                    <a href="" style="text-decoration: none; color: navy" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='navy'"><h5>Link to Profile</h5></a>
+                    <a href="" style="text-decoration: none; color: navy" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='navy'">
+                       <h5 style="margin-left: 213px">Link to Profile</h5>
+                    </a>
                     <style>
                         .card {
                             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -94,11 +113,11 @@
         <div class="rowEnd">
             <div class="columnEnd">
                 <ul style="list-style-type: none">
-                    <li><strong>About</strong></li>
-                    <li><h6>About Us</h6></li>
-                    <li><h6>Our Team</h6></li>
-                    <li><h6>History</h6></li>
-                    <li><h6>WISP Merch</h6></li>
+                    <a><li><strong>About</strong></li></a>
+                    <a><li><h6>About Us</h6></li></a>
+                   <a><li><h6>Our Team</h6></li></a>
+                    <a><li><h6>History</h6></li></a>
+                    <a><li><h6>WISP Merch</h6></li></a>
                 </ul>
             </div>
             <div class="columnEnd">
@@ -106,40 +125,41 @@
                     <div class="rowSports">
                         <li><strong>Professional Sports Teams</strong></li>
                         <div class="columnSports">
-                            <li><h6>Baseball</h6></li>
-                            <li><h6>Basketball</h6></li>
-                            <li><h6>Cycling</h6></li>
-                            <li><h6>Football</h6></li>
-                            <li><h6>Golf</h6></li>        
-                            <li><h6>Softball</h6></li>
+                            <a><li><h6>Baseball</h6></li></a>
+                            <a><li><h6>Basketball</h6></li></a>
+                            <a><li><h6>Cycling</h6></li></a>
+                            <a><li><h6>Football</h6></li></a>
+                            <a><li><h6>Golf</h6></li></a>        
+                            <a><li><h6>Softball</h6></li></a>
                         </div>
                         <div class="columnSports">
-                            <li><h6>Swimming</h6></li>
-                            <li><h6>Tennis</h6></li>
-                            <li><h6>Volleyball</h6></li>
+                            <a><li><h6>Swimming</h6></li></a>
+                            <a><li><h6>Tennis</h6></li></a>
+                            <a><li><h6>Volleyball</h6></li></a>
                         </div>
                     </div>
                 </ul>
             </div>
             <div class="columnEnd">
                 <ul style="list-style-type: none">
-                    <li><strong>Join WISP</strong></li>
-                    <li><h6>Create An Account</h6></li>
-                    <li><h6>Sign In</h6></li>
-                    <li><h6>Register Your Team</h6></li>
-                    <li><h6>Donate</h6></li>
+                    <a><li><strong>Join WISP</strong></li></a>
+                    <a><li><h6>Newsletter</h6></li></a>
+                    <a><li><h6>Create An Account</h6></li></a>
+                    <a><li><h6>Sign In</h6></li></a>
+                    <a><li><h6>Register Your Team</h6></li></a>
+                    <a><li><h6>Donate</h6></li></a>
                     
                 </ul>
             </div>
             <div class="columnEnd">
                 <ul style="list-style-type: none">
-                    <li><strong>Contact</strong></li>
-                    <li><h6>Email</h6></li>
-                    <li><h6>Phone Number</h6></li>
-                    <li><h6>Facebook</h6></li>
-                    <li><h6>Instagram</h6></li>
-                    <li><h6>Twitter</h6></li>
-                    <li><h6>LinkedIn</h6></li>
+                    <a><li><strong>Contact</strong></li></a>
+                    <a><li><h6>Email</h6></li></a>
+                    <a><li><h6>Phone Number</h6></li></a>
+                    <a><li><h6>Facebook</h6></li></a>
+                    <a><li><h6>Instagram</h6></li></a>
+                    <a><li><h6>Twitter</h6></li></a>
+                    <a><li><h6>LinkedIn</h6></li></a>
                 </ul>
             </div>
         </div>
