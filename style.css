@@ -283,18 +283,26 @@ a:visited {
 	width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
-	height: 100px;
+	height: 120px;
+}
+
+.forumCard h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+.forumCard p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.forumCard h6 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
 }
 
 .forumCard:hover {
 	box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
-    transition: 0.3s;
-	display: block;
-	margin: auto;
-	width: 90%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-	height: 400px;
 }
 
 .donateCard {
