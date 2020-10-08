@@ -39,6 +39,16 @@ h6 {
     color: black;
     font-family: "Bahnschrift", cursive;
 }
+.textCentered2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-family: "Bahnschrift", cursive;
+}
 
 #nav {
     margin-bottom: 10px;
@@ -196,6 +206,22 @@ h6 {
     font-family: "Arial", "Helvetica", sans-serif;
 }
 
+li a{
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: #5B5B5B;
+}
+
+a:visited {
+    color: black;
+}
+
 .columnEnd {
     float: left;
     width: 25%;
@@ -243,6 +269,7 @@ h6 {
 	margin: auto;
 	width: 90%;
     margin-top: 20px;
+    margin-bottom: 20px;
 	height: 100px;
 }
 
