@@ -50,6 +50,31 @@ h6 {
     font-family: "Bahnschrift", cursive;
 }
 
+.loginCenter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-family: "Bahnschrift", cursive;
+}
+
+.username, .password {
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.loginSubmit {
+    width: 70%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 .backToHome {
     padding-left: 20px;
     padding-right: 20px;
@@ -293,6 +318,7 @@ a:visited {
 .forumCard p {
     padding-left: 20px;
     padding-right: 20px;
+    font-family: sans-serif;
 }
 
 .forumCard h6 {
@@ -318,6 +344,23 @@ a:visited {
 }
 
 .donateCard:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+}
+
+.loginCard {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 20px;
+    transition: 0.3s;
+	display: block;
+	margin: auto;
+	width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	height: 360px;
+    background-color: white;
+}
+
+.loginCard:hover {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
 }
 
@@ -348,12 +391,12 @@ select {
     height: 30px;
 }
 
-label {
+.donateLabel {
     margin-left: 30px;
     font-family: sans-serif;
 }
 
-input[type=submit] {
+.donateSubmit {
     background-color: white;
     width: 70%;
     padding: 15px;
