@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fan Gallery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+    <div id="nav">
+      <ul>
+                <img src="logo.png" alt="logo" width="50" height="50" style="float:left">
+                <div class="logoName">
+                    <h1 style="float:left; margin: 0; margin-top: 10px;">WISP</h1>
+                </div>
+                <li style="margin-top: 15px"><a href="login.html">Login</a></li>
+        <li style="margin-top: 15px"><a href="about.html">About</a></li>
+                <li style="margin-top: 15px"><a href="merch.html">Merch</a></li>
+                <li style="margin-top: 15px"><a href="donate.html">Donate</a></li>
+                <li style="margin-top: 15px"><a href="connect.html">Connect</a></li>
+                <li class="dropdown">
+                    <a href="sports.html" class="dropTab" style="margin-top: 15px">Sports</a>
+                    <div class="dropOptions">
+                        <a href="team.html">Basketball</a>
+                        <a href="team.html">Lacrosse</a>
+                        <a href="team.html">Soccer</a>
+                        <a href="team.html">Tennis</a>
+                        <a href="team.html">Swimming</a>
+                        <a href="team.html">Volleyball</a>
+                    </div>
+                </li>
+                <li style="margin-top: 15px"><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+    <div class="titleBanner">
+        <div class="textCentered2">
+            <h1 style="font-size: 50px">Jane's Fan Gallery</h1>
+        </div>
+        <img src="sky2.jpg" alt="Clouds" width="100%" height="250" style="display: block">
+    </div>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin: 5px;
+}
+.row:after {
+  margin: 5px;
+  content: "";
+  display: table;
+  clear: both;
+}
+.view {
+    margin-top: 15px;
+  float: right;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  width: 90px;
+  height:90px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.view:hover {
+  background-color: #ddd;
+}
+
+.view.active {
+  background-color: #666;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+          .column {
+          width: 100%;
+          }
+        }
+</style>
+</head>
+<body>
+
+<div id="viewBox">
+    <div style="margin-right: 15px";>
+  <button class="view" onclick="listView()"><i class="fa fa-bars"></i> List view</button> 
+  <button class="view active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid view</button>
+</div>
+</div>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:#ddd;">
+    <img src="wispies.png" alt="Wispies" style="width: 90%;" class="center"></img>
+    <p>Check out Jane's pics from Wispies!</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <img src="sunnies.png" alt="The Sunnies" style="width: 90%;" class="center"></img>
+    <p>Check out Jane's pics from Sunnies!</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <img src="ballers.png" alt="The Ballers" style="width: 90%;" class="center"></img>
+    <p>Check out Jane's pics from Ballers!</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#ddd;">
+    <img src="ladyz.png" alt="The Ladyz" style="width: 90%;" class="center"></img>
+    <p>Check out Jane's pics from Ladyz!</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <img src="flyer.png" alt="The Flyers" style="width: 90%;" class="center"></img>
+    <p>Check out Jane's pics from Flyers!</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <img src="stars.png" alt="Stars" style="width: 90%;" class="center"></img>
+    <p>Check out Jane's pics from Stars!</p>
+  </div>
+</div>
+
+<script>
+var elements = document.getElementsByClassName("column");
+
+
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+var j = 0
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.height = "25%";
+    elements[i].style.width = "25%";
+  }
+}
+
+var viewBox = document.getElementById("viewBox");
+var views = viewBox.getElementsByClassName("view");
+for (var i = 0; i < views.length; i++) {
+  views[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
