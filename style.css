@@ -1,17 +1,67 @@
 @charset "UTF-8";
 /* CSS Document */
+h2 {
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+h3 {
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+h4 {
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+h5 {
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+h6 {
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.logoName {
+    font-family: fantasy;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropOptions {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 30px 16px;
+    z-index: 1;
+}
+
+.dropDown:hover .dropOptions {
+    display: block;
+    background-color: #211649; 
+    color: white;
+}
 
 .titleBanner {
-	text-align: center;
-	background-color: #211649;
-	color: white;
-	padding: 70px;
-    margin: 0;
-    margin-bottom: 10px;
+	position: relative;
+    display: inline-block;
+}
+
+.textCentered {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-family: "Bahnschrift", cursive;
 }
 
 #nav {
     margin-bottom: 10px;
+    font-family: "Arial", "Helvetica", sans-serif;
 }
 
 #nav ul {
@@ -51,6 +101,8 @@
 	color: white;
 	background-color: #211649;
 }
+
+
 
 .column {
     float: left;
@@ -140,7 +192,7 @@
 }
 
 .highlightTitle {
-    
+    font-family: "Arial", "Helvetica", sans-serif;
 }
 
 .columnEnd {
@@ -149,8 +201,9 @@
 }
 
 .rowEnd {
-    color: white;
-    background-color: #211649;
+    color: black;
+    background-color: #8BD9F0;
+    font-family: "Arial", "Helvetica", sans-serif;
 }
 
 .rowEnd:after {
@@ -182,5 +235,7 @@
     }
 }
 
-
+.forumCard {
+    
+}
 
