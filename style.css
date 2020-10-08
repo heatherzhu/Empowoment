@@ -24,25 +24,6 @@ h6 {
     font-family: fantasy;
 }
 
-.dropDown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropOptions {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    padding: 30px 16px;
-    z-index: 1;
-}
-
-.dropDown:hover .dropOptions {
-    display: block;
-    background-color: #211649; 
-    color: white;
-}
-
 .titleBanner {
 	position: relative;
     display: inline-block;
@@ -79,7 +60,7 @@ h6 {
 	float: right;
 }
 
-#nav li a {
+#nav li a, .dropTab {
 	display: block;
 	padding: 10px;
 	padding-left: 30px;
@@ -97,12 +78,27 @@ h6 {
 	color: black;
 }
 
-#nav a:hover {
+#nav a:hover, .dropdown:hover .dropTab, .dropOptions {
 	color: white;
-	background-color: #211649;
+	background-color: #A5A5A5;
 }
 
+#nav li.dropdown {
+    display: inline-block;
+}
 
+#nav .dropOptions {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#nav .dropdown:hover .dropOptions {
+    display: block;
+}
 
 .column {
     float: left;
@@ -175,20 +171,25 @@ h6 {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 45%;
     padding: 25px;
     color: black;
     font-size: 25px;
     user-select: none;
     -webkit-user-select: none;
 }
+
+.prev {
+    left: 10px;
+}
+
 .next {
-    right: 0;
+    right: 10px;
 }
 
 .prev:hover, .next:hover {
     color: white;
-    background-color: #2C2C2C;
+    background-color: #A5A5A5;
 }
 
 .highlightTitle {
@@ -236,6 +237,16 @@ h6 {
 }
 
 .forumCard {
-    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	display: block;
+	margin: auto;
+	width: 90%;
+    margin-top: 20px;
+	height: 100px;
+}
+
+.forumCard:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
