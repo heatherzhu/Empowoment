@@ -39,130 +39,181 @@
         <img src="sky2.jpg" alt="Clouds" width="100%" height="250" style="display: block">
     </div>
 
-<style>
-* {
-  box-sizing: border-box;
-}
+    <style>
+    * {
+      box-sizing: border-box;
+    }
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  margin: 5px;
-}
-.row:after {
-  margin: 5px;
-  content: "";
-  display: table;
-  clear: both;
-}
-.view {
-    margin-top: 15px;
-  float: right;
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  width: 90px;
-  height:90px;
-  background-color: #eee;
-  cursor: pointer;
-}
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      margin: 5px;
+    }
+    .row:after {
+      margin: 5px;
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .view {
+        margin-top: 15px;
+      float: right;
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      width: 90px;
+      height:90px;
+      background-color: #eee;
+      cursor: pointer;
+    }
 
-.view:hover {
-  background-color: #ddd;
-}
+    .view:hover {
+      background-color: #ddd;
+    }
 
-.view.active {
-  background-color: #666;
-  color: white;
-}
-@media screen and (max-width: 600px) {
-          .column {
-          width: 100%;
+    .view.active {
+      background-color: #666;
+      color: white;
+    }
+    @media screen and (max-width: 600px) {
+              .column {
+              width: 100%;
+              }
+            }
+    </style>
+
+    <div id="viewBox">
+        <div style="margin-right: 15px";>
+          <button class="view" onclick="listView()"><i class="fa fa-bars"></i> List view</button> 
+          <button class="view active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid view</button>
+        </div>
+    </div>
+    
+        <br>
+
+    <div class="row">
+      <div class="column" style="background-color:#ddd;">
+        <a href="">
+        <img src="wispies.png" alt="Wispies" style="width: 90%;" class="center">
+        <p>Check out Jane's pics from Wispies!</p>
+      </a>
+      </div>
+      <div class="column" style="background-color:#ddd;">
+        <a href="">
+        <img src="sunnies.png" alt="The Sunnies" style="width: 90%;" class="center">
+        <p>Check out Jane's pics from Sunnies!</p>
+      </a>
+      </div>
+      <div class="column" style="background-color:#ddd;">
+        <a href="">
+        <img src="ballers.png" alt="The Ballers" style="width: 90%;" class="center">
+        <p>Check out Jane's pics from Ballers!</p>
+      </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" style="background-color:#ddd;">
+        <a href="">
+        <img src="ladyz.png" alt="The Ladyz" style="width: 90%;" class="center">
+        <p>Check out Jane's pics from Ladyz!</p>
+      </a>
+      </div>
+      <div class="column" style="background-color:#ddd;">
+        <a href="">
+        <img src="flyer.png" alt="The Flyers" style="width: 90%;" class="center">
+        <p>Check out Jane's pics from Flyers!</p>
+      </a>
+      </div>
+      <div class="column" style="background-color:#ddd;">
+        <a href="">
+        <img src="stars.png" alt="Stars" style="width: 90%;" class="center">
+        <p>Check out Jane's pics from Stars!</p>
+      </a>
+      </div>
+    </div>
+
+    <script>
+        var elements = document.getElementsByClassName("column");
+
+
+        function listView() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "50%";
           }
         }
-</style>
-</head>
-<body>
 
-<div id="viewBox">
-    <div style="margin-right: 15px";>
-  <button class="view" onclick="listView()"><i class="fa fa-bars"></i> List view</button> 
-  <button class="view active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid view</button>
-</div>
-</div>
-<br>
+        var j = 0
+        function gridView() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.height = "25%";
+            elements[i].style.width = "25%";
+          }
+        }
 
-<div class="row">
-  <div class="column" style="background-color:#ddd;">
-    <a href="">
-    <img src="wispies.png" alt="Wispies" style="width: 90%;" class="center"></img>
-    <p>Check out Jane's pics from Wispies!</p>
-  </a>
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <a href="">
-    <img src="sunnies.png" alt="The Sunnies" style="width: 90%;" class="center"></img>
-    <p>Check out Jane's pics from Sunnies!</p>
-  </a>
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <a href="">
-    <img src="ballers.png" alt="The Ballers" style="width: 90%;" class="center"></img>
-    <p>Check out Jane's pics from Ballers!</p>
-  </a>
-  </div>
-</div>
+        var viewBox = document.getElementById("viewBox");
+        var views = viewBox.getElementsByClassName("view");
+        for (var i = 0; i < views.length; i++) {
+          views[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+    </script>
+        <br>
+        <br>
+        <!-- End card -->
+        <div id="endCard">
+            <div class="rowEnd">
+                <div class="columnEnd">
+                    <ul style="list-style-type: none">
+                        <li><strong>About</strong></li>
+                        <li><a href="about.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>About Us</h6></a></li>
+                        <li><a href="about.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Our Team</h6></a></li>
+                        <li><a href="about.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Our Mission</h6></a></li>
+                        <li><a href="about.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Our Vision</h6></a></li>
+                    </ul>
+                </div>
+                <div class="columnEnd">
+                    <ul style="list-style-type: none">
+                        <div class="rowSports">
+                            <li><strong>Sports Teams</strong></li>
+                            <div class="columnSports">
+                                <li><a href="team.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Basketball</h6></a></li>
+                                <li><a href="team.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Lacrosse</h6></a></li>
+                                <li><a href="team.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Soccer</h6></a></li>
+                                <li><a href="team.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Tennis</h6></a></li>
+                                <li><a href="team.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Swimming</h6></a></li>
+                                <li><a href="team.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Volleyball</h6></a></li>
+                            </div>
+                            <div class="columnSports">
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="columnEnd">
+                    <ul style="list-style-type: none">
+                        <li><strong>Join WISP</strong></li>
+                        <li><a href="register.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Create An Account</h6></a></li>
+                        <li><a href="login.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Sign In</h6></a></li>
+                        <li><a><h6>Register Your Team</h6></a></li>
+                        <li><a href="donate.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Donate</h6></a></li>
 
-<div class="row">
-  <div class="column" style="background-color:#ddd;">
-    <a href="">
-    <img src="ladyz.png" alt="The Ladyz" style="width: 90%;" class="center"></img>
-    <p>Check out Jane's pics from Ladyz!</p>
-  </a>
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <a href="">
-    <img src="flyer.png" alt="The Flyers" style="width: 90%;" class="center"></img>
-    <p>Check out Jane's pics from Flyers!</p>
-  </a>
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <a href="">
-    <img src="stars.png" alt="Stars" style="width: 90%;" class="center"></img>
-    <p>Check out Jane's pics from Stars!</p>
-  </a>
-  </div>
-</div>
-
-<script>
-var elements = document.getElementsByClassName("column");
-
-
-function listView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "50%";
-  }
-}
-
-var j = 0
-function gridView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.height = "25%";
-    elements[i].style.width = "25%";
-  }
-}
-
-var viewBox = document.getElementById("viewBox");
-var views = viewBox.getElementsByClassName("view");
-for (var i = 0; i < views.length; i++) {
-  views[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-
-</body>
+                    </ul>
+                </div>
+                <div class="columnEnd">
+                    <ul style="list-style-type: none">
+                        <li><strong>Contact</strong></li>
+                        <li><a href="about.html" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Contact Us</h6></a></li>
+                        <li><a href="" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Facebook</h6></a></li>
+                        <li><a href="" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Instagram</h6></a></li>
+                        <li><a href="" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>Twitter</h6></a></li>
+                        <li><a href="" style="text-decoration: none; color: black" onMouseOver="this.style.color='#5B5B5B'" onMouseOut="this.style.color='black'"><h6>LinkedIn</h6></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
