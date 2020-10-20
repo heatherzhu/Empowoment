@@ -1,27 +1,27 @@
 @charset "UTF-8";
 /* CSS Document */
 h2 {
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 h3 {
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 h4 {
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 h5 {
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 h6 {
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 .logoName {
-    font-family: fantasy;
+    font-family: "Bahnschrift", "Bradley Hand", "Apple Chancery", "URW Chancery L", "Snell Roundhand", "Brush Script MT, Brush Script Std", "Comic Sans MS, Comic Sans", cursive;
 }
 
 .titleBanner {
@@ -37,7 +37,7 @@ h6 {
     text-align: center;
     vertical-align: middle;
     color: black;
-    font-family: "Bahnschrift", cursive;
+    font-family: "Bahnschrift", "Bradley Hand", "Apple Chancery", "URW Chancery L", "Snell Roundhand", "Brush Script MT, Brush Script Std", "Comic Sans MS, Comic Sans", cursive;
 }
 .textCentered2 {
     position: absolute;
@@ -47,11 +47,11 @@ h6 {
     text-align: center;
     vertical-align: middle;
     color: black;
-    font-family: "Bahnschrift", cursive;
+    font-family: "Bahnschrift", "Bradley Hand", "Apple Chancery", "URW Chancery L", "Snell Roundhand", "Brush Script MT, Brush Script Std", "Comic Sans MS, Comic Sans", cursive;
 }
 
 table {
-    font-family: sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
     border-collapse: collapse;
 }
 
@@ -73,7 +73,7 @@ tr:nth-child(even) {
     text-align: center;
     vertical-align: middle;
     color: black;
-    font-family: "Bahnschrift", cursive;
+    font-family: "Bahnschrift", "Bradley Hand", "Apple Chancery", "URW Chancery L", "Snell Roundhand", "Brush Script MT, Brush Script Std", "Comic Sans MS, Comic Sans", cursive;
 }
 
 .username, .password {
@@ -103,7 +103,7 @@ tr:nth-child(even) {
 
 #nav {
     margin-bottom: 10px;
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 #nav ul {
@@ -255,7 +255,7 @@ tr:nth-child(even) {
 }
 
 .highlightTitle {
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 .columnEnd {
@@ -266,7 +266,7 @@ tr:nth-child(even) {
 .rowEnd {
     color: black;
     background-color: #8BD9F0;
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 .rowEnd:after {
@@ -307,7 +307,6 @@ tr:nth-child(even) {
 	width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
-	height: 120px;
 }
 
 .forumCard h3 {
@@ -317,7 +316,7 @@ tr:nth-child(even) {
 .forumCard p {
     padding-left: 20px;
     padding-right: 20px;
-    font-family: sans-serif;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 .forumCard h6 {
@@ -339,7 +338,7 @@ tr:nth-child(even) {
 	width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
-	height: 600px;
+    padding-bottom: 40px;
 }
 
 .donateCard:hover {
@@ -355,51 +354,53 @@ tr:nth-child(even) {
 	width: 350px;
     margin-top: 20px;
     margin-bottom: 20px;
-	height: 360px;
     background-color: white;
+    padding-bottom: 40px;
 }
 
 .loginCard:hover {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
 }
 
-.donate, .nameCard, .cardNumber{
-    width: 90%;
-    margin-left: 30px;
+.donate, .nameCard, .cardNumber, .cvv, .expDate {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 10px;
     padding: 10px;
     box-sizing: border-box;
     outline: none;
 }
-.expDate {
-    width: 20%;
-    padding: 7px;
-    margin-left: 2px;
-    margin-top: 10px;
-}
 
-.cvv {
-    width: 10%;
-    padding: 7px;
+.cvv, .expDate {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
 }
 
 select {
-    margin-left: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 10px;
     width: 50%;
-    height: 30px;
 }
 
 .donateLabel {
-    margin-left: 30px;
-    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    font-family: "Arial", "Helvetica", "Trebuchet MS", "Verdana", "Gill Sans", "Noto Sans", "Avantgarde, TeX Gyre Adventor, URW Gothic L", "Optima", sans-serif;
 }
 
 .donateSubmit {
     background-color: white;
     width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 15px;
-    margin-left: 85px;
     margin-top: 10px;
     border: none;
     border-radius: 4px;
