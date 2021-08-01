@@ -25,20 +25,16 @@ h6 {
 }
 
 .titleBanner {
-	position: relative;
-    display: inline-block;
+	text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Bahnschrift", "Bradley Hand", "Apple Chancery", "URW Chancery L", "Snell Roundhand", "Brush Script MT, Brush Script Std", "Comic Sans MS, Comic Sans", cursive;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.textCentered {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding-top: 50px;
-    text-align: center;
-    vertical-align: middle;
-    color: black;
-    font-family: "Bahnschrift", "Bradley Hand", "Apple Chancery", "URW Chancery L", "Snell Roundhand", "Brush Script MT, Brush Script Std", "Comic Sans MS, Comic Sans", cursive;
-}
 .textCentered2 {
     position: absolute;
     height: 100%;
